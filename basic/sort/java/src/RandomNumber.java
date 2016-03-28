@@ -2,15 +2,7 @@ import java.util.*;
 import java.io.*;
 
 class RandomNumber {
-	public static void main(String[] args) {
-		String filename = "number.txt";
-		//OutputStream ops = new OutputStream(filename);
-		RandomNumber xx = new RandomNumber();
-		for(int i=0;i<3;i++){
-			System.out.println(xx.getDoubleRandom(5,9));
-		}
-		//ops.write(byte[] b)
-	}
+
 	private Random random = new Random();
 	
 	public void getIntArray(int[] array,int count){
@@ -68,7 +60,5 @@ class RandomNumber {
 		}
 		result += random.nextInt(decimalMax)*decimal;
 		return result;
-	}	
-	
-	
+	}
 }

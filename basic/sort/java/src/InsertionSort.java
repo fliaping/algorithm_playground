@@ -1,4 +1,5 @@
 /**
+ * Created by Payne on 3/25/16.
  * 直接插入排序
  *
  * 原理:
@@ -13,16 +14,7 @@
  * 6.重复步骤2~5
  */
 class InsertionSort {
-	public static void main(String[] args) {
-		//随机生成待排序的数据
-		RandomNumber rn = new RandomNumber();
-		int data[] = new int[9];
-		rn.getIntArray(data,2);
-		printArray(data);
 
-		insertionSort(data);
-
-	}
 	//插入排序
 	public static void insertionSort(int data[]){
 		int length = data.length;
@@ -40,14 +32,5 @@ class InsertionSort {
 				data[index] = temp;    //将temp放到正确的位置
 			}
 		}
-		printArray(data);
-	}
-
-
-	public static void printArray(int arr[]){
-		for (int i: arr){
-			System.out.print(i+" ");
-		}
-		System.out.println("");
 	}
 }
